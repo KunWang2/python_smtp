@@ -1,0 +1,13 @@
+{
+    "marsol":
+    {
+        "hostserver": "",
+        "sender": "wangkun.19930730@bytedance.com",
+        "password": "",
+        "receiver": [
+            "459354755@qq.com"
+        ],
+        "title": "测试邮件",
+        "content": "测试邮件是否正常接收"
+    }
+}
