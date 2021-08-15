@@ -1,9 +1,10 @@
 {
     "marsol":
     {
-        "hostserver": "",
+        "hostserver": "smtp.gmail.com",
+        "hostport": 587,
         "sender": "wangkun.19930730@bytedance.com",
-        "password": "",
+        "password": "86930951wk",
         "receiver": [
             "459354755@qq.com"
         ],

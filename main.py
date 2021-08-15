@@ -41,6 +41,9 @@ class SMTPConfig():
         return self.dict_info["content"]
         print()
 
+    def GetMailPort(self):
+        return self.dict_info["hostport"]
+
 
 class SMTPManger():
 
@@ -63,7 +66,7 @@ class SMTPManger():
         return msg
 
     def Login(self):
-        smtp = SMTP_SSL(self.__config.GetMailHostServer())
+        smtp = SMTP_SSL(self.__config.GetMailHostServer(), self.__config.GetMailPort())
         sender = self.__config.GetMailSender()
         pwd = self.__config.GetMailSenderPwd()
         smtp.login(sender, pwd)
